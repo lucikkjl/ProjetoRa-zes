@@ -1,0 +1,152 @@
+.forgotPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-light-blue), var(--secondary-light-blue)); /* Degradê de azul claro */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.forgotCard {
+    background-color: var(--card-background);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Largura do card */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.title {
+    color: var(--color-teal-primary); /* Título em azul turquesa (#448c94) da sua paleta */
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Mantido o tamanho para o visual da imagem */
+    font-weight: bold;
+}
+
+.description {
+    color: var(--text-medium); /* Texto descritivo em cinza médio */
+    font-size: 0.9em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.forgotForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre os elementos do formulário */
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-background); /* Fundo branco para input, como na imagem */
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--border-color); /* Borda cinza suave */
+    transition: border-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra suave no input */
+}
+
+.inputWrapper:focus-within {
+    border-color: var(--color-yellow-accent); /* Borda amarela no foco, da sua paleta */
+    box-shadow: 0 2px 8px rgba(218, 182, 74, 0.2); /* Sombra amarela no foco */
+}
+
+.inputIcon {
+    color: var(--color-teal-primary); /* Ícone em azul turquesa (#448c94) da sua paleta */
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.customInput {
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+    font-size: 1em;
+    width: 100%;
+    outline: none;
+    color: var(--text-dark);
+}
+
+.recoverButton {
+    background-color: var(--color-orange-primary); /* Botão em LARANJA PRINCIPAL (#e36d37) */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.recoverButton:hover {
+    background-color: var(--color-orange-dark); /* Laranja escuro no hover (#e66834) */
+    transform: translateY(-2px);
+}
+
+.recoverButton:active {
+    transform: translateY(0);
+}
+
+.buttonIcon {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+.backToLogin {
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center;
+    justify-content: center; /* Centralizar horizontalmente */
+    margin-top: 30px;
+    color: var(--color-teal-primary); /* Link em azul turquesa (#448c94) da sua paleta */
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.backToLogin:hover {
+    color: var(--dark-teal-hover); /* Ou um tom mais escuro do teal principal, se preferir */
+    text-decoration: underline;
+}
+
+.backIcon {
+    margin-right: 5px;
+    font-size: 1em;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+    .forgotCard {
+        padding: 30px 20px;
+    }
+    .title {
+        font-size: 2em;
+    }
+    .recoverButton {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    .forgotCard {
+        border-radius: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

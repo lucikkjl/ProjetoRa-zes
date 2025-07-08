@@ -1,0 +1,147 @@
+.resetPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-light-blue), var(--secondary-light-blue));
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.resetCard {
+    background-color: var(--card-background);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.title {
+    color: var(--color-teal-primary); /* Título em azul turquesa */
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.description {
+    color: var(--text-medium); /* Texto descritivo em cinza médio */
+    font-size: 0.95em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.resetForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-background); /* Fundo branco para input */
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra suave no input */
+}
+
+.inputWrapper:focus-within {
+    border-color: var(--color-yellow-accent); /* Borda amarela no foco */
+    box-shadow: 0 2px 8px rgba(218, 182, 74, 0.2); /* Sombra amarela no foco */
+}
+
+.inputIcon {
+    color: var(--color-teal-primary); /* Ícone em azul turquesa */
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.customInput {
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+    font-size: 1em;
+    width: 100%;
+    outline: none;
+    color: var(--text-dark);
+}
+
+.sendButton {
+    background-color: var(--color-orange-primary); /* Botão em laranja principal */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.sendButton:hover {
+    background-color: var(--color-orange-dark); /* Laranja escuro no hover */
+    transform: translateY(-2px);
+}
+
+.sendButton:active {
+    transform: translateY(0);
+}
+
+.backToLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: var(--color-teal-primary); /* Link em azul turquesa */
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.backToLogin:hover {
+    color: var(--color-orange-primary); /* Link hover em laranja principal */
+    text-decoration: underline;
+}
+
+.backIcon {
+    margin-right: 5px;
+    font-size: 1em;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+    .resetCard {
+        padding: 30px 20px;
+    }
+    .title {
+        font-size: 1.8em;
+    }
+    .sendButton {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    .resetCard {
+        border-radius: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

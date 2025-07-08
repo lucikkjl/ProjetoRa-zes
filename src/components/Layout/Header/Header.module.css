@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  background-color: white;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 10;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftNav {
+  display: flex;
+  gap: 25px;
+}
+
+.rightNav {
+  display: flex;
+  gap: 15px;
+}
+
+.navLink,
+.authLink {
+  text-decoration: none;
+  font-weight: 600;
+  color: #003B4A; /* Azul escuro */
+  padding-bottom: 5px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navLink:hover,
+.authLink:hover {
+  color: #007B8A; /* Hover teal */
+}
+
+.active {
+  color: #007B8A;
+  border-bottom: 3px solid #007B8A;
+}

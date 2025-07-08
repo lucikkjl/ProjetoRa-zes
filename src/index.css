@@ -1,0 +1,34 @@
+:root {
+    /* Novas Cores da Paleta */
+    --color-orange-primary: #e36d37; /* Laranja para ações principais */
+    --color-orange-dark: #e66834; /* Laranja para hover / destaque */
+    --color-teal-primary: #448c94; /* Azul turquesa para títulos / ícones */
+    --color-yellow-accent: #dab64a; /* Amarelo ouro para detalhes / foco */
+
+    /* Cores de Fundo e Neutras (mantidas/ajustadas para harmonia) */
+    --primary-light-blue: #e0f7fa; /* Azul claríssimo do degradê de fundo */
+    --secondary-light-blue: #b2ebf2; /* Azul claro do degradê de fundo */
+
+    --card-background: #ffffff; /* Fundo do card */
+    --border-color: #e0e0e0; /* Cor da borda geral */
+    --text-dark: #212121; /* Texto escuro geral */
+    --text-medium: #424242; /* Texto médio cinza */
+    --text-light: #616161; /* Texto claro cinza */
+
+    /* Cores para inputs (ajustadas para harmonizar com a nova paleta) */
+    --input-background-light: #f5f5f5; /* Um cinza bem clarinho para o fundo do input */
+    --input-icon-color: var(--color-teal-primary); /* Ícones do input com o novo azul turquesa */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    min-height: 100vh;
+}

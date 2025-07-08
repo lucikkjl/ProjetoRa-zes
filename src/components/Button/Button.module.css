@@ -1,0 +1,36 @@
+.button {
+    background-color: var(--color-orange-primary); /* <-- CORRIGIDO: Usando a nova variável de laranja */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: var(--color-orange-dark); /* <-- CORRIGIDO: Usando a nova variável de laranja escuro para hover */
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+.primary {
+
+}
+
+.secondary {
+    background-color: var(--border-color);
+    color: var(--text-dark);
+}
+
+.secondary:hover {
+    background-color: #d0d0d0;
+}
