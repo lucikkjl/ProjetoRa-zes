@@ -1,5 +1,5 @@
 .button {
-    background-color: var(--color-orange-primary); /* <-- CORRIGIDO: Usando a nova variável de laranja */
+    background-color: var(--color-orange-primary);
     color: white;
     padding: 15px 25px;
     border: none;
@@ -14,16 +14,12 @@
 }
 
 .button:hover {
-    background-color: var(--color-orange-dark); /* <-- CORRIGIDO: Usando a nova variável de laranja escuro para hover */
+    background-color: var(--color-orange-dark);
     transform: translateY(-2px);
 }
 
 .button:active {
     transform: translateY(0);
-}
-
-.primary {
-
 }
 
 .secondary {

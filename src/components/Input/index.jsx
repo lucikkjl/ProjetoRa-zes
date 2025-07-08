@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Input.module.css'; // <-- CORRIGIDO: I maiúsculo
+import styles from './Input.module.css';
 
 const Input = ({ type, placeholder, icon, value, onChange }) => (
     <div className={styles.inputContainer}>

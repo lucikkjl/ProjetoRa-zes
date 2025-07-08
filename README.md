@@ -13,8 +13,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-## npm install 
-## npm install react-router-dom
-## npm install react-icons
+## npm install react-router-dom react-icons
 ## npm run dev
 ##   ➜  Local:   http://localhost:5173/

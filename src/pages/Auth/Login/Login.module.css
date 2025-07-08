@@ -20,7 +20,7 @@
 }
 
 .title {
-    color: var(--color-teal-primary); /* Título em azul turquesa */
+    color: var(--color-teal-primary);
     margin-bottom: 30px;
     font-size: 2.5em;
     font-weight: bold;
@@ -36,18 +36,16 @@
     display: flex;
     align-items: center;
     background-color: var(--input-background-light);
-    border-radius: 10px;
     padding: 10px;
-    border: 1px solid var(--border-color); /* Borda padrão mais sutil */
     transition: border-color 0.3s ease;
 }
 
 .inputWrapper:focus-within {
-    border-color: var(--color-yellow-accent); /* Borda amarela no foco */
+    border-color: var(--color-yellow-accent);
 }
 
 .inputIcon {
-    color: var(--input-icon-color); /* Ícone em azul turquesa */
+    color: var(--input-icon-color);
     margin-right: 10px;
     font-size: 1.2em;
 }
@@ -78,7 +76,7 @@
 }
 
 .loginButton {
-    background-color: var(--color-orange-primary); /* Botão em laranja principal */
+    background-color: var(--color-orange-primary);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -95,7 +93,7 @@
 }
 
 .loginButton:hover {
-    background-color: var(--color-orange-dark); /* Laranja escuro no hover */
+    background-color: var(--color-orange-dark);
     transform: translateY(-2px);
 }
 
@@ -108,12 +106,18 @@
     margin-left: 5px;
 }
 
-.forgotPassword {
-    display: block;
+.passwordLinks {
     margin-top: 15px;
-    color: var(--color-teal-primary); /* Link em azul turquesa */
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     font-size: 0.9em;
+    color: var(--color-teal-primary);
+}
+
+.forgotPassword {
+    color: var(--color-teal-primary);
+    text-decoration: none;
     transition: text-decoration 0.3s ease;
 }
 
@@ -132,7 +136,7 @@
 }
 
 .signupLinkText {
-    color: var(--color-orange-primary); /* Link "Cadastre-se" em laranja principal */
+    color: var(--color-orange-primary);
     font-weight: bold;
     text-decoration: none;
     transition: text-decoration 0.3s ease;
@@ -159,29 +163,10 @@
     .loginCard {
         border-radius: 0;
         height: 100vh;
-        display: flex; /* Adiciona display flex para centralizar conteúdo verticalmente */
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-top: 0; /* Remove padding top para mobile full screen */
+        padding-top: 0;
         padding-bottom: 0;
     }
-}
-
-.passwordLinks {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-size: 0.9em;
-    color: var(--color-teal-primary);
-}
-
-.forgotPassword {
-    color: var(--color-teal-primary);
-    text-decoration: none;
-    transition: text-decoration 0.3s ease;
-}
-
-.forgotPassword:hover {
-    text-decoration: underline;
 }

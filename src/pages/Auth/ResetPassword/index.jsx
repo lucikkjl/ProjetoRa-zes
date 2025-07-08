@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Reset.module.css'; // Importa o CSS Module
-import { MdEmail } from 'react-icons/md'; // Ícone para email/código
-import { IoIosArrowBack } from 'react-icons/io'; // Ícone de seta para voltar
+import styles from './Reset.module.css';
+import { MdEmail } from 'react-icons/md';
+import { IoIosArrowBack } from 'react-icons/io';
 
 import Input from '../../../components/Input';
 import Button from '../../../components/Button';
@@ -13,9 +13,7 @@ const ResetPasswordPage = () => {
     const handleCodeVerification = (e) => {
         e.preventDefault();
         console.log('Verifying code:', code);
-        // Lógica para verificar o código
         alert('Código verificado! Redirecionando para a redefinição de senha (simulação).');
-        // Em um cenário real, redirecionaria para uma página de "Definir Nova Senha"
     };
 
     return (
@@ -27,9 +25,9 @@ const ResetPasswordPage = () => {
                 </p>
                 <form onSubmit={handleCodeVerification} className={styles.resetForm}>
                     <div className={styles.inputWrapper}>
-                        <MdEmail className={styles.inputIcon} /> {/* Ícone de email para o campo de código */}
+                        <MdEmail className={styles.inputIcon} />
                         <Input
-                            type="text" // Tipo texto para o código
+                            type="text"
                             placeholder="Digite seu código..."
                             value={code}
                             onChange={(e) => setCode(e.target.value)}

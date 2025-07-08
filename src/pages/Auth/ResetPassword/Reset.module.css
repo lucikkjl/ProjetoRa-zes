@@ -20,14 +20,14 @@
 }
 
 .title {
-    color: var(--color-teal-primary); /* Título em azul turquesa */
+    color: var(--color-teal-primary);
     margin-bottom: 20px;
     font-size: 2.2em;
     font-weight: bold;
 }
 
 .description {
-    color: var(--text-medium); /* Texto descritivo em cinza médio */
+    color: var(--text-medium);
     font-size: 0.95em;
     margin-bottom: 30px;
     line-height: 1.5;
@@ -42,21 +42,19 @@
 .inputWrapper {
     display: flex;
     align-items: center;
-    background-color: var(--card-background); /* Fundo branco para input */
-    border-radius: 10px;
+    background-color: var(--card-background);
     padding: 10px;
-    border: 1px solid var(--border-color);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra suave no input */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .inputWrapper:focus-within {
-    border-color: var(--color-yellow-accent); /* Borda amarela no foco */
-    box-shadow: 0 2px 8px rgba(218, 182, 74, 0.2); /* Sombra amarela no foco */
+    border-color: var(--color-yellow-accent);
+    box-shadow: 0 2px 8px rgba(218, 182, 74, 0.2);
 }
 
 .inputIcon {
-    color: var(--color-teal-primary); /* Ícone em azul turquesa */
+    color: var(--color-teal-primary);
     margin-right: 10px;
     font-size: 1.2em;
 }
@@ -72,7 +70,7 @@
 }
 
 .sendButton {
-    background-color: var(--color-orange-primary); /* Botão em laranja principal */
+    background-color: var(--color-orange-primary);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -90,7 +88,7 @@
 }
 
 .sendButton:hover {
-    background-color: var(--color-orange-dark); /* Laranja escuro no hover */
+    background-color: var(--color-orange-dark);
     transform: translateY(-2px);
 }
 
@@ -103,7 +101,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    color: var(--color-teal-primary); /* Link em azul turquesa */
+    color: var(--color-teal-primary);
     text-decoration: none;
     font-size: 0.95em;
     font-weight: bold;
@@ -111,7 +109,7 @@
 }
 
 .backToLogin:hover {
-    color: var(--color-orange-primary); /* Link hover em laranja principal */
+    color: var(--color-orange-primary);
     text-decoration: underline;
 }
 
@@ -120,7 +118,6 @@
     font-size: 1em;
 }
 
-/* Media Queries para responsividade */
 @media (max-width: 600px) {
     .resetCard {
         padding: 30px 20px;

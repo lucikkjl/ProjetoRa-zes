@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, var(--primary-light-blue), var(--secondary-light-blue)); /* Degradê de azul claro */
+    background: linear-gradient(135deg, var(--primary-light-blue), var(--secondary-light-blue));
     padding: 20px;
     box-sizing: border-box;
 }
@@ -14,20 +14,20 @@
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px; /* Largura do card */
+    max-width: 400px;
     text-align: center;
     box-sizing: border-box;
 }
 
 .title {
-    color: var(--color-teal-primary); /* Título em azul turquesa (#448c94) da sua paleta */
+    color: var(--color-teal-primary);
     margin-bottom: 20px;
-    font-size: 2.5em; /* Mantido o tamanho para o visual da imagem */
+    font-size: 2.5em;
     font-weight: bold;
 }
 
 .description {
-    color: var(--text-medium); /* Texto descritivo em cinza médio */
+    color: var(--text-medium);
     font-size: 0.9em;
     margin-bottom: 30px;
     line-height: 1.5;
@@ -36,27 +36,25 @@
 .forgotForm {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espaçamento entre os elementos do formulário */
+    gap: 20px;
 }
 
 .inputWrapper {
     display: flex;
     align-items: center;
-    background-color: var(--card-background); /* Fundo branco para input, como na imagem */
-    border-radius: 10px;
+    background-color: var(--card-background);
     padding: 10px;
-    border: 1px solid var(--border-color); /* Borda cinza suave */
     transition: border-color 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra suave no input */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .inputWrapper:focus-within {
-    border-color: var(--color-yellow-accent); /* Borda amarela no foco, da sua paleta */
-    box-shadow: 0 2px 8px rgba(218, 182, 74, 0.2); /* Sombra amarela no foco */
+    border-color: var(--color-yellow-accent);
+    box-shadow: 0 2px 8px rgba(218, 182, 74, 0.2);
 }
 
 .inputIcon {
-    color: var(--color-teal-primary); /* Ícone em azul turquesa (#448c94) da sua paleta */
+    color: var(--color-teal-primary);
     margin-right: 10px;
     font-size: 1.2em;
 }
@@ -72,7 +70,7 @@
 }
 
 .recoverButton {
-    background-color: var(--color-orange-primary); /* Botão em LARANJA PRINCIPAL (#e36d37) */
+    background-color: var(--color-orange-primary);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -90,7 +88,7 @@
 }
 
 .recoverButton:hover {
-    background-color: var(--color-orange-dark); /* Laranja escuro no hover (#e66834) */
+    background-color: var(--color-orange-dark);
     transform: translateY(-2px);
 }
 
@@ -104,11 +102,11 @@
 }
 
 .backToLogin {
-    display: flex; /* Para alinhar o ícone e o texto */
+    display: flex;
     align-items: center;
-    justify-content: center; /* Centralizar horizontalmente */
+    justify-content: center;
     margin-top: 30px;
-    color: var(--color-teal-primary); /* Link em azul turquesa (#448c94) da sua paleta */
+    color: var(--color-teal-primary);
     text-decoration: none;
     font-size: 0.95em;
     font-weight: bold;
@@ -116,7 +114,7 @@
 }
 
 .backToLogin:hover {
-    color: var(--dark-teal-hover); /* Ou um tom mais escuro do teal principal, se preferir */
+    color: var(--dark-teal-hover);
     text-decoration: underline;
 }
 
@@ -125,7 +123,6 @@
     font-size: 1em;
 }
 
-/* Media Queries para responsividade */
 @media (max-width: 600px) {
     .forgotCard {
         padding: 30px 20px;

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Register.module.css';
-import { MdEmail, MdLock } from 'react-icons/md'; // Ícones para email e senha
-import { FaUser } from 'react-icons/fa'; // Ícone para usuário (opcional, se quiser adicionar nome)
+import { MdEmail, MdLock } from 'react-icons/md';
 
 import Input from '../../../components/Input';
 import Button from '../../../components/Button';
@@ -19,7 +18,6 @@ const RegisterPage = () => {
             alert('As senhas não coincidem!');
             return;
         }
-        // Lógica de registro aqui
         alert('Cadastro realizado com sucesso (simulação)!');
     };
 

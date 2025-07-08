@@ -1,90 +1,69 @@
 .footer {
-    background-color: var(--secondary-blue);
-    color: white;
+    width: 100%;
+    background-color: #ffffff;
     padding: 40px 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
     margin-top: auto;
+    border-top: 1px solid #f0f0f0;
 }
 
 .footerContent {
+    max-width: 300px;
+    text-align: left;
+    color: #333;
+    padding-right: 20px;
+}
+
+.contactTitle {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333; 
+}
+
+.contactDetail {
+    font-size: 0.9em;
+    margin-bottom: 6px;
+    line-height: 1.4;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+    align-items: center;
+    color: #333;
 }
 
-.footerSection {
-    flex: 1;
-    min-width: 180px;
-}
-
-.footerSection h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: var(--accent-color);
-}
-
-.footerSection ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footerSection ul li {
-    margin-bottom: 10px;
-}
-
-.footerSection ul li a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.95em;
-    transition: color 0.3s ease;
-}
-
-.footerSection ul li a:hover {
-    color: white;
-}
-
-.footerSection p {
-    font-size: 0.95em;
-    margin-bottom: 10px;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.footerSection p a {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footerSection p a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.copyright {
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 0.85em;
-    color: rgba(255, 255, 255, 0.6);
+.icon {
+    margin-right: 6px;
+    font-size: 1em;
+    color: #666; 
 }
 
 @media (max-width: 768px) {
-    .footerContent {
-        flex-direction: column;
-        align-items: center;
+    .footer {
+        justify-content: center;
         text-align: center;
+        padding: 30px 5%;
     }
-    .footerSection {
-        width: 100%;
-        margin-bottom: 30px;
+
+    .footerContent {
+        max-width: 100%;
+        text-align: center;
+        padding-right: 0;
     }
-    .footerSection:last-child {
-        margin-bottom: 0;
+
+    .contactTitle {
+        font-size: 1em;
+    }
+
+    .contactDetail {
+        font-size: 0.85em;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 5%;
     }
 }

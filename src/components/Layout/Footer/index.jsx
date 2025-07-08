@@ -1,29 +1,20 @@
 import React from 'react';
-import styles from './Footer.module.css'; // <-- CORRIGIDO: F maiúsculo
+import styles from './Footer.module.css';
+import { MdEmail, MdLocationOn } from 'react-icons/md';
 
 const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContent}>
-                <div className={styles.footerSection}>
-                    <h3>Sobre o projeto</h3>
-                    <ul>
-                        <li><a href="#">Quem somos</a></li>
-                        <li><a href="#">Objetivo</a></li>
-                        <li><a href="#">Termos de uso</a></li>
-                    </ul>
+                <div className={styles.contactInfo}>
+                    <h4 className={styles.contactTitle}>Contato</h4>
+                    <p className={styles.contactDetail}>
+                        <MdEmail className={styles.icon} /> emailprojeto@gmail.com
+                    </p>
+                    <p className={styles.contactDetail}>
+                        <MdLocationOn className={styles.icon} /> Joinville, SC
+                    </p>
                 </div>
-                <div className={styles.footerSection}>
-                    <h3>Navegação</h3>
-                    <ul>
-                        <li><a href="/">Início</a></li>
-                        <li><a href="#">Voluntariado</a></li>
-                        <li><a href="#">ONGs Parceiras</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div className={styles.footerBottom}>
-                <p>© 2025 Projeto. Todos os direitos reservados.</p>
             </div>
         </footer>
     );

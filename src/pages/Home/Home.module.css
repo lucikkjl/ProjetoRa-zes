@@ -6,18 +6,17 @@
     color: var(--text-dark);
 }
 
-/* --- Home Section (Hero) --- */
 .homeSection {
     position: relative;
     width: 100%;
-    height: 600px; /* Altura ajustável */
-    background-color: var(--primary-light-blue); /* Fallback */
+    height: 685px;
+    background-color: var(--primary-light-blue);
     background-size: cover;
-    background-position: center right; /* Posiciona a imagem mais à direita */
+    background-position: center right;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-    padding: 0 5%; /* Padding lateral */
+    justify-content: flex-start;
+    padding: 0 5%;
     box-sizing: border-box;
 }
 
@@ -27,51 +26,48 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* Gradiente que se estende da esquerda (mais opaco) para a direita (menos opaco) sobre a imagem */
     background: linear-gradient(
         to right,
-        rgba(224, 247, 250, 0.95) 0%, /* primary-light-blue com alta opacidade */
-        rgba(178, 235, 242, 0.8) 50%, /* secondary-light-blue com opacidade média */
-        rgba(178, 235, 242, 0.2) 100% /* Fade para a imagem na direita */
+        rgba(224, 247, 250, 0.95) 0%,
+        rgba(178, 235, 242, 0.8) 50%,
+        rgba(178, 235, 242, 0.2) 100%
     );
     z-index: 0;
 }
 
 .homeContent {
-    max-width: 550px; /* Largura do bloco de texto */
+    max-width: 550px;
     color: var(--color-teal-primary);
     text-align: left;
-    z-index: 1; /* Garante que o conteúdo esteja na frente do overlay */
-    position: relative; /* Para garantir z-index */
-    padding-right: 20px; /* Espaço entre o texto e a área da imagem */
+    z-index: 1;
+    position: relative;
+    padding-right: 20px;
 }
 
 .homeTitle {
-    font-size: 3.5em; /* Tamanho da fonte como na inspiração */
+    font-size: 3.5em;
     margin-bottom: 20px;
     line-height: 1.2;
     font-weight: 800;
-    color: var(--color-teal-primary); /* Cor do título: azul turquesa */
+    color: var(--color-teal-primary);
 }
 
 .homeSubtitle {
     font-size: 1.3em;
     margin-bottom: 40px;
     line-height: 1.5;
-    color: var(--text-dark); /* Cor do subtítulo: cinza escuro */
+    color: var(--text-dark);
     font-weight: 500;
 }
 
 .homeButtons {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas menores */
+    flex-wrap: wrap;
 }
 
-/* Estilos específicos para os botões da Home Section */
-.homeButtons .volunteerButton,
-.homeButtons .ongButton {
-    width: auto; /* Permite que a largura seja ajustada ao conteúdo */
+.homeButtons .volunteerButton {
+    width: auto;
     padding: 15px 30px;
     font-size: 1.1em;
     font-weight: 600;
@@ -81,136 +77,16 @@
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-}
-
-.homeButtons .volunteerButton {
-    background-color: var(--color-teal-primary); /* Botão em azul turquesa */
+    background-color: var(--color-teal-primary);
     color: white;
     border: 1px solid var(--color-teal-primary);
 }
 
 .homeButtons .volunteerButton:hover {
-    background-color: #3b7a81; /* Tom um pouco mais escuro de teal para hover */
-    border-color: #3b7a81;
-}
-
-.homeButtons .ongButton {
-    background-color: var(--color-teal-primary); /* Botão também em azul turquesa, como na imagem */
-    color: white;
-    border: 1px solid var(--color-teal-primary);
-}
-
-.homeButtons .ongButton:hover {
     background-color: #3b7a81;
     border-color: #3b7a81;
 }
 
-/* --- Outras Seções (Saiba Mais, Como Funciona) --- */
-/* Mantenho as classes abaixo para as seções secundárias */
-.infoSection,
-.howItWorksSection {
-    padding: 80px 5%;
-    background-color: var(--card-background);
-    text-align: center;
-}
-
-.infoSection h2,
-.howItWorksSection h2 {
-    font-size: 2.5em;
-    color: var(--color-teal-primary);
-    margin-bottom: 40px;
-    font-weight: bold;
-}
-
-.infoSection p,
-.howItWorksSection p {
-    max-width: 800px;
-    margin: 0 auto 50px auto;
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: var(--text-light);
-}
-
-.cardsContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.card {
-    background-color: var(--input-background-light);
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    max-width: 300px;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h3 {
-    font-size: 1.4em;
-    color: var(--color-teal-primary);
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.card p {
-    font-size: 0.95em;
-    color: var(--text-medium);
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.cardImage {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-.stepsContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 50px;
-}
-
-.stepItem {
-    max-width: 280px;
-    text-align: center;
-}
-
-.stepIcon {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin-bottom: 20px;
-}
-
-.stepItem h3 {
-    font-size: 1.5em;
-    color: var(--color-teal-primary);
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.stepItem p {
-    font-size: 1em;
-    color: var(--text-light);
-    line-height: 1.5;
-    margin-bottom: 0;
-}
-
-
-/* --- Media Queries para Responsividade --- */
 @media (max-width: 1024px) {
     .homeTitle {
         font-size: 3em;
@@ -218,14 +94,9 @@
     .homeSubtitle {
         font-size: 1.2em;
     }
-    .homeButtons .volunteerButton,
-    .homeButtons .ongButton {
+    .homeButtons .volunteerButton {
         font-size: 1em;
         padding: 12px 25px;
-    }
-    .infoSection h2,
-    .howItWorksSection h2 {
-        font-size: 2em;
     }
 }
 
@@ -233,10 +104,9 @@
     .homeSection {
         height: 500px;
         padding: 0 5%;
-        background-position: center; /* Centraliza a imagem em telas menores */
-        /* Ajusta o gradiente para telas menores, se a imagem for o foco */
+        background-position: center;
         background-image: linear-gradient(
-            to top, /* Gradiente de baixo para cima para mobile */
+            to top,
             rgba(224, 247, 250, 0.95) 0%,
             rgba(178, 235, 242, 0.8) 70%,
             rgba(178, 235, 242, 0.2) 100%
@@ -245,7 +115,7 @@
 
     .homeOverlay {
         background: linear-gradient(
-            to bottom, /* Ajusta para o gradiente em telas menores */
+            to bottom,
             rgba(224, 247, 250, 0.95) 0%,
             rgba(178, 235, 242, 0.8) 70%,
             rgba(178, 235, 242, 0.2) 100%
@@ -253,9 +123,9 @@
     }
 
     .homeContent {
-        max-width: 100%; /* Ocupa a largura total */
-        text-align: center; /* Centraliza texto em mobile */
-        padding-top: 80px; /* Espaço para o header */
+        max-width: 100%;
+        text-align: center;
+        padding-top: 80px;
         padding-right: 0;
     }
 
@@ -266,11 +136,7 @@
         font-size: 1.1em;
     }
     .homeButtons {
-        justify-content: center; /* Centraliza botões */
-    }
-    .infoSection,
-    .howItWorksSection {
-        padding: 60px 5%;
+        justify-content: center;
     }
 }
 
@@ -286,19 +152,9 @@
         font-size: 1em;
         margin-bottom: 30px;
     }
-    .homeButtons .volunteerButton,
-    .homeButtons .ongButton {
-        width: 100%; /* Botões ocupam a largura total */
+    .homeButtons .volunteerButton {
+        width: 100%;
         font-size: 1em;
         padding: 12px 20px;
-    }
-    .cardsContainer,
-    .stepsContainer {
-        flex-direction: column; /* Pilha vertical */
-        align-items: center;
-    }
-    .card,
-    .stepItem {
-        max-width: 90%;
     }
 }

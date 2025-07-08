@@ -20,7 +20,7 @@
 }
 
 .title {
-    color: var(--color-teal-primary); /* Título em azul turquesa */
+    color: var(--color-teal-primary);
     margin-bottom: 30px;
     font-size: 2.5em;
     font-weight: bold;
@@ -30,27 +30,25 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 30px; /* Espaço antes do divisor */
+    margin-bottom: 30px;
 }
 
 .inputWrapper {
     display: flex;
     align-items: center;
-    background-color: var(--card-background); /* Fundo branco para input */
-    border-radius: 10px;
+    background-color: var(--card-background);
     padding: 10px;
-    border: 1px solid var(--border-color);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra suave no input */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .inputWrapper:focus-within {
-    border-color: var(--color-yellow-accent); /* Borda amarela no foco */
-    box-shadow: 0 2px 8px rgba(218, 182, 74, 0.2); /* Sombra amarela no foco */
+    border-color: var(--color-yellow-accent);
+    box-shadow: 0 2px 8px rgba(218, 182, 74, 0.2);
 }
 
 .inputIcon {
-    color: var(--color-teal-primary); /* Ícone em azul turquesa */
+    color: var(--color-teal-primary);
     margin-right: 10px;
     font-size: 1.2em;
 }
@@ -66,7 +64,7 @@
 }
 
 .createAccountButton {
-    background-color: var(--color-orange-primary); /* Botão em laranja principal */
+    background-color: var(--color-orange-primary);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -83,7 +81,7 @@
 }
 
 .createAccountButton:hover {
-    background-color: var(--color-orange-dark); /* Laranja escuro no hover */
+    background-color: var(--color-orange-dark);
     transform: translateY(-2px);
 }
 
@@ -92,9 +90,9 @@
 }
 
 .divider {
-    border-bottom: 1px solid var(--border-color); /* Linha divisória */
+    border-bottom: 1px solid var(--border-color);
     margin: 20px 0;
-    width: 80%; /* Largura da linha */
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -105,7 +103,7 @@
 }
 
 .loginLink {
-    color: var(--color-orange-primary); /* Link em laranja principal */
+    color: var(--color-orange-primary);
     font-weight: bold;
     text-decoration: none;
     transition: text-decoration 0.3s ease;
@@ -115,7 +113,6 @@
     text-decoration: underline;
 }
 
-/* Media Queries para responsividade */
 @media (max-width: 600px) {
     .registerCard {
         padding: 30px 20px;
